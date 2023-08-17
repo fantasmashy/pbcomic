@@ -1,16 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Image with Editable Text</title>
-</head>
-<body>
+  <!DOCTYPE html>
+  <html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" href="#" />
+    <title>PBCOMIC</title>
+    <link rel="stylesheet" href="../style.css">
+  </head>
+
+  <header>  
+    <h2>LOREMIPSUMDOLORSITAMET</h2>  
+    <p> asdasdsadasdsdasdadasdadsadadsdsasdaasdasdadsadsd</p>  
+  </header>  
+
+  <body>
     <div class="container">
+
+      <div class="lcontainer">
+        <div id="globeCounter"></div>
+        <button id="textSpawner" class="button" onclick="newText(32,32,'ta bien')">
+          New Text
+        </button>  
+      </div>
+
+      <div class="rcontainer" id="rcontainer">
+        <div id="globePoint"></div>
         <img id="image" src="image.jpg" alt="Image">
-        <div id="textarea" contenteditable="true">Your Text Here</div>
+      </div>
+      
     </div>
+
+    <script src="draggable.js"></script>
     <script src="script.js"></script>
-</body>
-</html>
+  </body>
+
+  </html>
