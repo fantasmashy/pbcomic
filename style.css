@@ -1,31 +1,93 @@
-body {
+header{  
+    width: 100%;
+    background-color: hotpink;
     margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
+    margin-bottom: 15px;
+    position: relative;
+    display: grid;
     align-items: center;
-    min-height: 100vh;
-    background-color: #f0f0f0;
+    border-bottom: 3px solid black;
 }
 
-.container {
+body {
+    background-color: #f5e6e8;
     position: relative;
     text-align: center;
+    width: auto;
+    align-items: center;
 }
 
-#image {
-    max-width: 100%;
+.container{
+    position: relative;
+    display: inline-flex;
+    margin: auto;
+    border: 3px solid black;
+    width: auto;
+    float: left;
+    left: 15%;
+}
+
+.lcontainer{
+    display: block;
+    background-color: pink;
+    width: 20%;
+    float: left;
+    padding: 10px;
+    border-right: 3px solid black;
+}
+
+.rcontainer {
+    float: right;
+    background-color: #ffadc6;
+    display: block;
+    margin: 0;
+    float: none;
+    width: auto;
     height: auto;
 }
 
-.textarea {
-    position: absolute;
-    transform: translateX(-50%);
+#globePoint{
+    width:0;
+    height:0;
+    margin:0;
+    background-color: black;
+    position: relative;
+    float: left;
+    display: grid;
+}
+
+#image {
+    pointer-events: none;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: auto;
+    align-items: left;
+
+}
+
+#textSpawner{
+    padding: 10px 20px;
+    background-color: crimson;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.textglobe {
+    display: inline-block;
+    position: fixed;
+    font-family: 'Arial', sans-serif;
     font-size: 24px;
     font-weight: bold;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    user-select: text;
-    white-space: pre-line; /* Preserve line breaks */
-    overflow-wrap: break-word; /* Allow word wrap */
+    color: black;
+    z-index: 2;
+    width: auto;
+    height: auto;
+    text-align: center;
+    align-content: center;
+    white-space: nowrap;
+    margin: auto;
 }
